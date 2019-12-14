@@ -2,7 +2,7 @@ import subprocess
 import difflib
 from subprocess import PIPE
 
-class package_handler:
+class packageHandler:
   def __init__(self):
     self.__package_dict = self.__get_package_dict() 
 
@@ -31,8 +31,8 @@ class package_handler:
       print(close_matches)
 
   def __find_package(self,package):
-    if(self.package_dict):
-      return self.package_dict
+    if(self.__package_dict['']):
+      return self.__package_dict
     else:
       return False
 
